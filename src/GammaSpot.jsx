@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
-const BACKEND_WS   = "ws://localhost:8000/ws";
+const BACKEND_WS   = "wss://gammaspot-1.onrender.com/ws";
 const BACKEND_HTTP = "https://gammaspot-1.onrender.com";
 
 const styles = `
