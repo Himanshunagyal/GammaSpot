@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 const BACKEND_WS   = "ws://localhost:8000/ws";
-const BACKEND_HTTP = "http://localhost:8000";
+const BACKEND_HTTP = "https://gammaspot-1.onrender.com";
 
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
@@ -434,8 +434,7 @@ function Dashboard({ onBack, chatId }) {
                   "Volume":   `${inst.volume_ratio}x`,
                   "AI":       inst.ai_confidence||"—",
                 },
-              },...prev].slice(0,50)];
-            }
+              },...prev].slice(0,50))            }
           });
         }
       } catch(e) { console.error("[WS] Parse error:", e); }
