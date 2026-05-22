@@ -630,8 +630,8 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 
-const BACKEND_WS   = "wss://gammaspot-1.onrender.com/ws";
-const BACKEND_HTTP = "https://gammaspot-1.onrender.com";
+const BACKEND_WS   = "wss://gammaspot-2.onrender.com/ws";
+const BACKEND_HTTP = "https://gammaspot-2.onrender.com";
 
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
